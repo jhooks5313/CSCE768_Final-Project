@@ -1,0 +1,20 @@
+#paths
+data_dir: ./data     
+labels_csv: ./data/labels.csv   
+out_dir: ./cv_results       
+
+#k-fold & training
+k: 5
+epochs: 150
+batch_size: 8
+seed: 42
+resume_epoch: 21
+max_folds: 1
+
+#device and dataloader
+device: cpu
+num_workers: 1
+
+#model
+base_channels: 64
+img_shape: [1, 256, 256]
